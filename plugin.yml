@@ -1,0 +1,16 @@
+---
+name: DarkEntities
+version: 0.0.1
+main: AmitxD\DarkEntities\DarkEntities
+api: 5.3.2
+src-namespace-prefix: AmitxD\DarkEntities
+commands:
+  summonboss:
+    description: DarkEntities summon command.
+    usage: "/summonboss < Herobrine||Null||Entity303 >"
+    permission: darkentities.command.summonboss
+permissions:
+  darkentities.command.summonboss:
+    description: "Allows the user to run the DarkEntities command"
+    default: op
+...
