@@ -29,7 +29,7 @@ abstract class DarkEntityManager extends Human {
 
     public function entityBaseTick(int $tickDiff = 1): bool {
         $update = parent::entityBaseTick($tickDiff);
-        // Implement your custom entity behavior here
+        // Implementing custom entity behavior here
         return $update;
     }
 }
