@@ -8,6 +8,7 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\player\Player;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
+use AmitxD\DarkEntities\Manager\EntityManager;
 
 class DarkEntities extends PluginBase {
 
@@ -31,13 +32,13 @@ class DarkEntities extends PluginBase {
                     $entityName = strtolower($args[0]);
                     switch ($entityName) {
                         case "herobrine":
-                            $this->EntityManager->summonHerobrine($sender);
+                            $this->EntityManager->SummonHerobrine($sender);
                             break;
                         case "null":
-                            //   $this->EntityManager->summonNull($sender);
+                               $this->EntityManager->SummonNullEntity ($sender);
                             break;
                         case "entity303":
-                            //  $this->EntityManager->summonEntity303($sender);
+                              $this->EntityManager->SummonEntity303($sender);
                             break;
                         default:
                             $sender->sendMessage("§cUsage: /summonboss <Herobrine||Null||Entity303>");
